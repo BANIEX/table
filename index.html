@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <div>CYCLO</div>
+
+
+
+    <script>
+        let table1 = document.createElement("table");
+        // let thead = document.createElement("thead");
+        let trow1= document.createElement("tr");
+        let trow2 = document.createElement("tr");
+        let theader = document.createElement("th");
+        let text1 = document.createTextNode("we have created a header with javascript");
+        let text2 = document.createTextNode("we have created a body with javascript");
+
+        let tbody= document.createElement("tbody");
+        let tdata = document.createElement("td");
+
+
+        // theader.appendChild(text1);
+        // trow1.appendChild(theader);
+        // thead.appendChild(trow);
+        table1.appendChild(trow1).appendChild(theader).appendChild(text1);
+    
+       
+    
+        tdata.appendChild(text2);
+        trow2.appendChild(tdata);
+        // tbody.appendChild(trow);
+        table1.appendChild(trow2);
+    
+        table1.style.border = "2px solid red";
+        theader.style.border = "2px solid red";
+        tdata.style.border = "2px solid red";
+
+
+        document.body.appendChild(table1);
+
+    </script>
+    
+</body>
+
+
+    
+
+
+
+
+
+
+
+
+</html>
