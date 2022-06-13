@@ -14,12 +14,16 @@
     <script>
         let table1 = document.createElement("table");
         // let thead = document.createElement("thead");
+        let trow0 = document.createElement("tr")  //HEADER
         let trow1= document.createElement("tr");  //FIRT ROW
         let trow2= document.createElement("tr");  // SECOND ROW
         let trow3 = document.createElement("tr");  //THIRD ROW
 
 
 
+
+        let theader0 = document.createElement("th");
+        let text0 = document.createTextNode("BANIEX");
 
 
         let theader11 = document.createElement("th");
@@ -29,6 +33,8 @@
         let text12 = document.createTextNode("MIDDLE");
         let text13 = document.createTextNode("RIGHT");
 
+
+        
         let theader21 = document.createElement("th");
         let theader22 = document.createElement("th");
         let theader23 = document.createElement("th");
@@ -50,6 +56,11 @@
 
         let tbody= document.createElement("tbody");
         let tdata = document.createElement("td");
+
+        theader0.appendChild(text0);
+        theader0.colSpan = "3";
+        trow0.appendChild(theader0);
+        table1.appendChild(trow0)
 
 
         theader11.appendChild(text11);
@@ -79,6 +90,8 @@
 
     
         table1.style.border = "2px solid red";
+
+        theader0.style.border = "2px solid red";
 
         theader11.style.border = "2px solid red";
         theader12.style.border = "2px solid red";
