@@ -14,31 +14,84 @@
     <script>
         let table1 = document.createElement("table");
         // let thead = document.createElement("thead");
-        let trow1= document.createElement("tr");
-        let trow2 = document.createElement("tr");
-        let theader = document.createElement("th");
-        let text1 = document.createTextNode("we have created a header with javascript");
-        let text2 = document.createTextNode("we have created a body with javascript");
+        let trow1= document.createElement("tr");  //FIRT ROW
+        let trow2= document.createElement("tr");  // SECOND ROW
+        let trow3 = document.createElement("tr");  //THIRD ROW
+
+
+
+
+
+        let theader11 = document.createElement("th");
+        let theader12 = document.createElement("th");
+        let theader13 = document.createElement("th");
+        let text11 = document.createTextNode("LEFT");
+        let text12 = document.createTextNode("MIDDLE");
+        let text13 = document.createTextNode("RIGHT");
+
+        let theader21 = document.createElement("th");
+        let theader22 = document.createElement("th");
+        let theader23 = document.createElement("th");
+        let text21 = document.createTextNode("HELLO");
+        let text22 = document.createTextNode("MR");
+        let text23 = document.createTextNode("CHRISTIAN");
+
+
+        let theader31 = document.createElement("th");
+        let theader32 = document.createElement("th");
+        let theader33 = document.createElement("th");
+        let text31 = document.createTextNode("SEE");
+        let text32 = document.createTextNode("MY");
+        let text33 = document.createTextNode("ASSIGNMENT");
+
+
+
+
 
         let tbody= document.createElement("tbody");
         let tdata = document.createElement("td");
 
 
-        // theader.appendChild(text1);
-        // trow1.appendChild(theader);
-        // thead.appendChild(trow);
-        table1.appendChild(trow1).appendChild(theader).appendChild(text1);
-    
-       
-    
-        tdata.appendChild(text2);
-        trow2.appendChild(tdata);
-        // tbody.appendChild(trow);
+        theader11.appendChild(text11);
+        theader12.appendChild(text12);
+        theader13.appendChild(text13);
+        trow1.appendChild(theader11);
+        trow1.appendChild(theader12);
+        trow1.appendChild(theader13);
+        table1.appendChild(trow1);
+
+
+        theader21.appendChild(text21);
+        theader22.appendChild(text22);
+        theader23.appendChild(text23);
+        trow2.appendChild(theader21);
+        trow2.appendChild(theader22);
+        trow2.appendChild(theader23);
         table1.appendChild(trow2);
+
+        theader31.appendChild(text31);
+        theader32.appendChild(text32);
+        theader33.appendChild(text33);
+        trow3.appendChild(theader31);
+        trow3.appendChild(theader32);
+        trow3.appendChild(theader33);
+        table1.appendChild(trow3);
+
     
         table1.style.border = "2px solid red";
-        theader.style.border = "2px solid red";
-        tdata.style.border = "2px solid red";
+
+        theader11.style.border = "2px solid red";
+        theader12.style.border = "2px solid red";
+        theader13.style.border = "2px solid red";
+
+        theader21.style.border = "2px solid red";
+        theader22.style.border = "2px solid red";
+        theader23.style.border = "2px solid red";
+
+        theader31.style.border = "2px solid red";
+        theader32.style.border = "2px solid red";
+        theader33.style.border = "2px solid red";
+
 
 
         document.body.appendChild(table1);
